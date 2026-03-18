@@ -15,7 +15,7 @@ const site = {
   brand: {
     name: "Formika møbelsnekkeri"
    
-    logo: "https://placehold.co/logo.png
+    logo: "https://placehold.co/"logo.png"
   },
 
   contact: {
