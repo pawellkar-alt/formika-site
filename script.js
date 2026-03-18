@@ -13,8 +13,8 @@ Tu zmieniasz:
 
 const site = {
   brand: {
-    name: "Formika 
-    subtitle: "Møbelsnekkeri",
+    name: "Formika møbelsnekkeri"
+   
     logo: "https://placehold.co/logo.png
   },
 
