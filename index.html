@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formika Møbelsnekkeri</title>
+    <meta
+      name="description"
+      content="Skreddersydde kjøkken, garderober og spesialmøbler produsert etter mål."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="#top" class="brand">
+          <img id="brand-logo" src="" alt="Logo" />
+          <div>
+            <div class="brand-name" id="brand-name"></div>
+            <div class="brand-subtitle" id="brand-subtitle"></div>
+          </div>
+        </a>
+
+        <nav class="menu">
+          <a href="#om-oss">Om oss</a>
+          <a href="#tjenester">Tjenester</a>
+          <a href="#prosjekter">Prosjekter</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+
+        <a class="button button-dark" href="#kontakt" id="nav-cta"></a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="badge" id="hero-badge"></div>
+            <h1 id="hero-title"></h1>
+            <p class="hero-text" id="hero-description"></p>
+
+            <div class="hero-actions">
+              <a class="button button-dark" href="#kontakt" id="hero-button-1"></a>
+              <a class="button button-light" href="#prosjekter" id="hero-button-2"></a>
+            </div>
+
+            <div class="stats" id="hero-stats"></div>
+          </div>
+
+          <div class="hero-visual">
+            <img id="hero-image-main" class="hero-main-image" src="" alt="Hovedbilde" />
+            <div class="hero-side">
+              <img id="hero-image-secondary" class="hero-secondary-image" src="" alt="Ekstra bilde" />
+              <div class="quote-box">
+                <div class="quote-brand" id="quote-brand"></div>
+                <p id="hero-quote"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="om-oss">
+        <div class="container two-col">
+          <div>
+            <div class="eyebrow">Om oss</div>
+            <h2 id="about-title"></h2>
+            <p class="section-text" id="about-description"></p>
+          </div>
+          <div class="card">
+            <h3 id="why-us-title"></h3>
+            <ul class="check-list" id="why-us-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white" id="tjenester">
+        <div class="container">
+          <div class="section-head center">
+            <div class="eyebrow">Tjenester</div>
+            <h2 id="services-title"></h2>
+            <p class="section-text narrow" id="services-description"></p>
+          </div>
+          <div class="cards three" id="services-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="prosjekter">
+        <div class="container">
+          <div class="section-head spread">
+            <div>
+              <div class="eyebrow">Prosjekter</div>
+              <h2 id="projects-title"></h2>
+            </div>
+            <p class="section-text narrow" id="projects-description"></p>
+          </div>
+          <div class="cards three" id="projects-grid"></div>
+        </div>
+      </section>
+
+      <section class="section dark-section">
+        <div class="container process-grid">
+          <div>
+            <div class="eyebrow dark">Arbeidsprosess</div>
+            <h2 id="process-title"></h2>
+            <div class="process-list" id="process-list"></div>
+          </div>
+
+          <div class="contact-card" id="kontakt">
+            <div class="eyebrow">Kontakt</div>
+            <h3 id="contact-title"></h3>
+            <p class="section-text" id="contact-description"></p>
+
+            <div class="contact-lines">
+              <div><strong>E-post:</strong> <span id="contact-email"></span></div>
+              <div><strong>Telefon:</strong> <span id="contact-phone"></span></div>
+              <div><strong>Adresse:</strong> <span id="contact-address"></span></div>
+            </div>
+
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Podłącz formularz do Formspree lub Resend, aby wysyłał wiadomości.');">
+              <input id="form-name" placeholder="" />
+              <input id="form-email" placeholder="" />
+              <textarea id="form-message" placeholder=""></textarea>
+              <button class="button button-dark" id="form-button" type="submit"></button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div><strong id="footer-brand"></strong> • <span id="footer-text"></span></div>
+        <div>© <span id="footer-year"></span> <span id="footer-company"></span>. Alle rettigheter reservert.</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
